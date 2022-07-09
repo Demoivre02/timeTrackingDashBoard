@@ -1,0 +1,670 @@
+
+@import url("https://fonts.google.com/specimen/Rubik");
+body{
+   background-color:hsl(226, 43%, 10%);
+   font-family: 'Rubik', sans-serif;
+}
+.container{
+    margin-top: 2em;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    padding: 2em 0;
+}
+.container-fluid{
+    position: relative;
+    left: 2em;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 5.5cm 5.5cm 5.5cm 5.5cm;
+    gap: 1em;
+    width: min(80%, 70rem);
+    margin-inline: auto;
+}
+i {
+    color: white;
+    margin-top: 1em;
+}
+svg{
+    z-index: -1;
+    margin-left: 5em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.parent1{
+    grid-row-start: span 2;
+    background-color:hsl(235, 46%, 20%)  ;
+    /* width: 50%; */
+    padding-bottom: 2.2em;
+    border-radius:  10px ;
+    position: relative;
+}
+.child1{
+    padding-bottom: 0em;
+    height: 70%;
+    background-color: hsl(264, 64%, 52%) ;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+}
+.child1:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+img{
+    border: 2px solid white;
+    width: 60px;
+    height: 25%;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: 1em;
+    margin-left: .7em;
+}
+ul li{
+    list-style: none;
+    padding: 4%;
+    position: relative;
+    right: 2em;
+}
+ul li a{
+    text-decoration: none;
+    transition: background-color,ease-in-out, 0.3s;
+    color:  hsl(264, 64%, 52%)  ;
+}
+ul li a:hover{
+    color:whitesmoke ;
+}
+ul li a:focus{
+    color: whitesmoke;
+}
+.list{
+    width: 100%;
+}
+h2{
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-left: .5em;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+}
+p{
+    margin-left: .7em;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 0;
+}
+
+.parent2{
+    padding-bottom: 0em;
+    background-color: hsl(15, 100%, 70%) ;
+    border-radius:  14px 14px 14px 14px ;
+    position: relative;
+    /* width: 50%; */
+}
+.child2{
+    z-index: 1;
+    bottom: 3.1em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.6em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child2:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.parent3{
+    padding-bottom: 0em;
+    position: relative;
+     background-color:  hsl(236, 100%, 87%) ;
+    border-radius:  14px 14px 14px 14px ;
+}
+.child3{
+    z-index: 1;
+    bottom: 2.8em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.55em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child3:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.parent4{
+    padding-bottom: 0em;
+    background-color: hsl(348, 100%, 68%) ;
+    border-radius:  14px 14px 14px 14px ;
+    position: relative;
+}
+.child4{
+    z-index: 1;
+    bottom: 2.8em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.33em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child4:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.parent5{
+    padding-bottom: 0em;
+    position: relative;
+    background-color:  hsl(145, 58%, 55%) ;
+    border-radius:  14px 14px 14px 14px ;
+}
+.child5{
+    z-index: 1;
+    bottom: 1.5em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.33em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child5:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.parent6{
+    position: relative;
+    background-color: hsl(264, 64%, 52%) ;
+    border-radius:  14px 14px 14px 14px ;
+}
+.child6{
+    top: 1.2em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.25em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child6:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.parent7{
+    padding-bottom: 0em;
+    position: relative;
+    background-color: hsl(43, 84%, 65%) ;
+    border-radius:  14px 14px 14px 14px ;
+}
+.child7{
+    z-index: 1;
+    bottom: 2.2em;
+    position: relative;
+    background-color:hsl(235, 46%, 20%);
+    height: 80%;
+    padding-bottom: 0.25em;
+    transition: background-color,ease-in-out, 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.child7:hover{
+    background-color:hsl(236, 36%, 31%);   
+}
+.attribution a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+span{
+    color: white;
+    font-size: 1.3rem;
+}
+@media(max-width:1000px){
+    body{
+        background-color:hsl(226, 43%, 10%);
+        font-family: 'Rubik', sans-serif;
+     }
+     .container{
+         margin-top: 2em;
+         width: 70%;
+         height: 80vh;
+         margin: auto;
+         padding: 2em 0;
+     }
+     .container-fluid{
+         position: relative;
+         margin-top: 3em;
+         display: grid;
+         grid-template-columns: 4.5cm 4.5cm 4.5cm 4.5cm;
+         gap: 2em;
+         width: min(50%, 70rem);
+         margin-inline: auto;
+         margin: auto;
+     }
+     i {
+         color: white;
+         margin-top: 1em;
+     }
+     svg{
+         max-width: 100%;
+         z-index: -1;
+         margin-left: 2em;
+     }
+     .row{
+         display: flex;
+         justify-content: space-between;
+         width: 90%;
+     }
+     .parent1{
+         grid-row-start: span 2;
+         background-color:hsl(235, 46%, 20%)  ;
+         /* width: 50%; */
+         padding-bottom: 2.2em;
+         border-radius:  10px ;
+         position: relative;
+     }
+     .child1{
+         padding-bottom: 0em;
+         height: 70%;
+         background-color: hsl(264, 64%, 52%) ;
+         z-index: 1;
+         border-radius: 10px 10px 10px 10px;
+     }
+     .child1:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     img{
+         border: 2px solid white;
+         width: 60px;
+         height: 25%;
+         border-radius: 50%;
+         padding: 0;
+         margin-top: 1em;
+         margin-left: .7em;
+     }
+     ul li{
+         list-style: none;
+         padding: 4%;
+         position: relative;
+         right: 2em;
+     }
+     ul li a{
+         text-decoration: none;
+         transition: background-color,ease-in-out, 0.3s;
+         color:  hsl(264, 64%, 52%)  ;
+     }
+     ul li a:hover{
+         color:whitesmoke ;
+     }
+     ul li a:focus{
+         color: whitesmoke;
+     }
+     .list{
+         width: 100%;
+     }
+     h2{
+         font-weight: lighter;
+         padding: 0;
+         margin: 0;
+         margin-left: .5em;
+         color: whitesmoke;
+         font-family: 'Rubik', sans-serif;
+     }
+     p{
+         margin-left: .7em;
+         color: whitesmoke;
+         font-size: 15px;
+         padding: 0;
+     }
+     
+     .parent2{
+         padding-bottom: 0em;
+         background-color: hsl(15, 100%, 70%) ;
+         border-radius:  14px 14px 14px 14px ;
+         position: relative;
+         /* width: 50%; */
+     }
+     .child2{
+         z-index: 1;
+         bottom: 3.1em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.6em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child2:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent3{
+         padding-bottom: 0em;
+         position: relative;
+          background-color:  hsl(236, 100%, 87%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child3{
+         z-index: 1;
+         bottom: 2.8em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.55em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child3:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent4{
+         padding-bottom: 0em;
+         background-color: hsl(348, 100%, 68%) ;
+         border-radius:  14px 14px 14px 14px ;
+         position: relative;
+     }
+     .child4{
+         z-index: 1;
+         bottom: 2.8em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.33em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child4:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent5{
+         padding-bottom: 0em;
+         position: relative;
+         background-color:  hsl(145, 58%, 55%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child5{
+         z-index: 1;
+         bottom: 1.5em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.33em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child5:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent6{
+         position: relative;
+         background-color: hsl(264, 64%, 52%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child6{
+         top: 1.2em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.25em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child6:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent7{
+         padding-bottom: 0em;
+         position: relative;
+         background-color: hsl(43, 84%, 65%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child7{
+         z-index: 1;
+         bottom: 2.2em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.25em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child7:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .attribution a{
+         color: white;
+         font-size: 1.3rem;
+         text-decoration: none;
+     }
+     span{
+         color: white;
+         font-size: 1.3rem;
+     }
+}
+@media(max-width:700px){
+    body{
+        text-align: center;
+        background-color:hsl(226, 43%, 10%);
+        font-family: 'Rubik', sans-serif;
+     }
+     .container{
+         margin-top: 2em;
+         width: 90%;
+         height: 80vh;
+         margin: auto;
+         padding: 2em 0;
+     }
+     .container-fluid{
+         padding: 2em;
+         position: relative;
+         left: 2em;
+         margin-top: 3em;
+         display: block;
+         /* grid-template-columns: 5.5cm 5.5cm 5.5cm 5.5cm; */
+         gap: 1em;
+         width: min(80%, 70rem);
+         margin-inline: auto;
+     }
+     i {
+         color: white;
+         margin-top: 1em;
+     }
+     svg{
+         z-index: -1;
+         margin-left: 5em;
+     }
+     .row{
+         display: flex;
+         justify-content: space-between;
+         width: 90%;
+     }
+     .parent1{
+        margin-bottom: 1.5em;
+         grid-row-start: span 2;
+         background-color:hsl(235, 46%, 20%)  ;
+         /* width: 50%; */
+         padding-bottom: 2.2em;
+         border-radius:  10px ;
+         position: relative;
+     }
+     .child1{
+         padding-bottom: 0em;
+         height: 70%;
+         background-color: hsl(264, 64%, 52%) ;
+         z-index: 1;
+         border-radius: 10px 10px 10px 10px;
+     }
+     .child1:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     img{
+         border: 2px solid white;
+         width: 60px;
+         height: 25%;
+         border-radius: 50%;
+         padding: 0;
+         margin-top: 1em;
+         margin-left: .7em;
+     }
+     ul li{
+         list-style: none;
+         padding: 4%;
+         position: relative;
+         right: 2em;
+     }
+     ul li a{
+         text-decoration: none;
+         transition: background-color,ease-in-out, 0.3s;
+         color:  hsl(264, 64%, 52%)  ;
+     }
+     ul li a:hover{
+         color:whitesmoke ;
+     }
+     ul li a:focus{
+         color: whitesmoke;
+     }
+     .list{
+         width: 100%;
+     }
+     h2{
+         font-weight: lighter;
+         padding: 0;
+         margin: 0;
+         margin-left: .5em;
+         color: whitesmoke;
+         font-family: 'Rubik', sans-serif;
+     }
+     p{
+         margin-left: .7em;
+         color: whitesmoke;
+         font-size: 15px;
+         padding: 0;
+     }
+     
+     .parent2{
+         margin-bottom: 1.5em;
+         padding-bottom: 0em;
+         background-color: hsl(15, 100%, 70%) ;
+         border-radius:  14px 14px 14px 14px ;
+         position: relative;
+         /* width: 50%; */
+     }
+     .child2{
+         z-index: 1;
+         bottom: 0em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.6em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child2:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent3{
+        margin-bottom: 1.5em;
+         padding-bottom: 0em;
+         position: relative;
+          background-color:  hsl(236, 100%, 87%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child3{
+         bottom: 0;
+         z-index: 1;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.55em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child3:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent4{
+        margin-bottom: 1.5em;
+         padding-bottom: 0em;
+         background-color: hsl(348, 100%, 68%) ;
+         border-radius:  14px 14px 14px 14px ;
+         position: relative;
+     }
+     .child4{
+         bottom: 0;
+         z-index: 1;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.33em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child4:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent5{
+        margin-bottom: 1.5em;
+         padding-bottom: 0em;
+         position: relative;
+         background-color:  hsl(145, 58%, 55%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child5{
+         z-index: 1;
+         bottom: 0em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.33em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child5:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent6{
+        margin-bottom: 1.5em;
+         position: relative;
+         background-color: hsl(264, 64%, 52%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child6{
+         top: 1.2em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.25em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child6:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .parent7{
+        margin-bottom: 1.5em;
+         padding-bottom: 0em;
+         position: relative;
+         background-color: hsl(43, 84%, 65%) ;
+         border-radius:  14px 14px 14px 14px ;
+     }
+     .child7{
+         z-index: 1;
+         bottom: 0em;
+         position: relative;
+         background-color:hsl(235, 46%, 20%);
+         height: 80%;
+         padding-bottom: 0.25em;
+         transition: background-color,ease-in-out, 0.3s;
+         border-radius: 12px 12px 12px 12px;
+     }
+     .child7:hover{
+         background-color:hsl(236, 36%, 31%);   
+     }
+     .attribution a{
+         color: white;
+         font-size: 1.3rem;
+         text-decoration: none;
+     }
+     span{
+         color: white;
+         font-size: 1.3rem;
+     }
+}
